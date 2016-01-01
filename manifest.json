@@ -1,9 +1,9 @@
 {
-  "name": "page action sample",
+  "name": "歌詞ゲッター from 歌詞タイム",
   "version": "1.0",
-  "manifest_version": 2, 
+  "manifest_version": 2,
 
-  "description" : "pageActionのsample", 
+  "description" : "歌詞タイムからクリップボードへ歌詞をコピーします",
 
   "permissions": [
   	"tabs", "http://*/*"
@@ -15,6 +15,7 @@
 
   "page_action": {
 	"default_icon": "icon-19.png",
-	"default_title": "PageActionSample"
+	"default_title": "歌詞ゲッター from 歌詞タイム",
+	"default_popup": "popup.html"
   }
 }

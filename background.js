@@ -4,8 +4,3 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 		chrome.pageAction.show(tabId);
 	}
 });
-
-//クリックイベントの定義
-chrome.pageAction.onClicked.addListener(function() {
-	chrome.tabs.executeScript(null, { file : "lyrics_get.js"})
-});
