@@ -1,0 +1,20 @@
+{
+  "name": "page action sample",
+  "version": "1.0",
+  "manifest_version": 2, 
+
+  "description" : "pageActionのsample", 
+
+  "permissions": [
+  	"tabs", "http://*/*"
+  ], 
+
+  "background": {
+  	"scripts": ["background.js"]
+  },
+
+  "page_action": {
+	"default_icon": "icon-19.png",
+	"default_title": "PageActionSample"
+  }
+}
