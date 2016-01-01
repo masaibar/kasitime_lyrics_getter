@@ -4,7 +4,8 @@ var title=document.getElementsByClassName("person_list_and_other_contents")[0].g
 var dummyDiv = document.createElement("div");
 dummyDiv.innerHTML = '<textarea id="copyTextarea">'+lyrics+'</textarea>';
 
-var parentObject = document.getElementById("lyrics");
+//ページが下にスクロールされないようにlogoの下に擬似的にtextareaを作る
+var parentObject = document.getElementsByClassName("logo")[0];
 parentObject.appendChild(dummyDiv);
 
 //コピーするためにテキストエリアを選択状態にする
